@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TaskFlow - Registrasi</title>
+    <title>TaskFlow - Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,15 +12,13 @@
             <img src="assets/logo-taskflow.png" alt="TaskFlow Logo">
         </div>
         <h1>TaskFlow</h1>
-        <p>Buat akun baru</p>
-        <form action="../backend/register.php" method="POST">
-            <input type="text" name="name" placeholder="Nama Pengguna" required>
+        <p>Masuk ke akun Anda</p>
+        <form action="../backend/login.php" method="POST">
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Password" required>
-            <input type="password" name="confirm_password" placeholder="Konfirmasi Password" required>
-            <button type="submit" class="btn-primary">Daftar</button>
+            <button type="submit" class="btn-primary">Sign In</button>
         </form>
-        <p>Sudah punya akun? <a href="login.html">Masuk ke akun Anda</a></p>
+        <p>Belum punya akun? <a href="register.html">Daftar sekarang!</a></p>
     </div>
 </body>
 </html>
