@@ -1,4 +1,3 @@
-/* Reset styling dasar */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,92 +6,104 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #121212; /* Latar belakang gelap */
-    color: #fff; /* Warna teks putih */
+    background-color: #121212;
+    color: #fff;
 }
 
-/* Container utama */
 .container {
-    background: #1e1e1e; /* Warna latar container */
+    background: #1e1e1e;
     padding: 30px;
-    border-radius: 10px; /* Sudut membulat */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 100%;
-    max-width: 400px; /* Batas lebar container */
+    max-width: 400px;
 }
 
-/* Logo */
 .logo img {
-    width: 150px; 
+    width: 150px;
     margin-bottom: 20px;
 }
 
-/* Heading utama */
 h1 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 p {
     font-size: 14px;
     margin-bottom: 20px;
-    color: #b3b3b3; /* Warna teks abu-abu terang */
+    color: #b3b3b3;
 }
 
-/* Form */
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px; /* Jarak antar elemen dalam form */
+    gap: 15px;
 }
 
 form input {
-    width: 100%; /* Input memenuhi lebar container */
-    max-width: 300px; /* Batas lebar input */
+    width: 100%;
+    max-width: 300px;
     padding: 10px;
-    border: 1px solid #333; /* Border abu gelap */
-    border-radius: 5px; /* Sudut membulat */
-    background: #333; /* Latar belakang input */
-    color: #fff; /* Warna teks input */
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
     font-size: 14px;
 }
 
-form input::placeholder {
-    color: #aaa; /* Warna placeholder */
+form input:-webkit-autofill {
+    background-color: #333 !important;
+    color: #fff !important;
+    border-color: #007BFF !important;
 }
 
-/* Tombol utama */
+form input:focus {
+    border-color: #007BFF;
+    background-color: #444;
+    outline: none;
+}
+
+form input:not(:placeholder-shown) {
+    background-color: #444;
+    border-color: #007BFF;
+}
+
+form input:focus::placeholder {
+    color: #fff;
+}
+
 button.btn-primary {
-    background-color: #007BFF; /* Warna biru utama */
-    color: #fff; /* Warna teks putih */
-    padding: 12px 20px; /* Padding tombol */
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 20px;
     border: none;
-    border-radius: 8px; /* Sudut tombol membulat */
+    border-radius: 8px;
     cursor: pointer;
-    width: 100%; /* Tombol memenuhi lebar form */
-    max-width: 300px; /* Batas lebar tombol */
+    width: 100%;
+    max-width: 300px;
     font-size: 16px;
-    font-weight: bold; /* Teks lebih tegas */
-    transition: all 0.3s ease; /* Animasi transisi */
-    margin-bottom: 20px; /* Tambahkan jarak bawah pada tombol */
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
 }
 
 button.btn-primary:hover {
-    background-color: #0056b3; /* Warna lebih gelap saat hover */
-    transform: scale(1.02); /* Efek pembesaran tombol */
+    background-color: #0056b3;
+    transform: scale(1.02);
 }
 
-/* Tautan */
 a {
-    color: #007BFF; /* Warna biru utama */
-    text-decoration: none; /* Hilangkan garis bawah */
-    font-weight: 500; /* Teks lebih tebal */
-    transition: color 0.3s ease; /* Animasi warna */
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0056b3; /* Warna lebih gelap saat hover */
-    text-decoration: underline; /* Garis bawah muncul saat hover */
+    color: #0056b3;
+    text-decoration: underline;
 }
+
